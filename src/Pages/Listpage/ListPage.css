@@ -1,0 +1,88 @@
+.mylist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.mylist .item{
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+.item p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item img{
+    width: 100%;
+}
+.item h3{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 114, 151);
+}
+.bar h1 {
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px 0;
+}
+.btn_home{
+    text-align: center;
+}
+.btn_home button{
+    background-color: cadetblue;
+    padding: 10px 20px;
+    font-size: 20px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.btn_home button:hover{
+    background-color:  rgb(32, 40, 40);
+    color: #fff;
+}
+.Overlay{
+    position: relative;
+    
+}
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    border-radius: 10px;
+    
+    
+}
+.overlay2 .overview{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    opacity: 0;
+    width: 100%;
+    padding: 20px;
+    transition: 0.6s;
+    
+}
+.Overlay:hover .overlay2 .overview {
+    opacity: 1;
+}
+.Overlay:hover .overlay2  {
+    background-color: rgba(14, 14, 14, 0.571);
+}
+.Overlay img{
+    border-radius: 10px;
+}
